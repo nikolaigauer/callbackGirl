@@ -6,21 +6,19 @@ var students = [
 ];
 
 // sort by name
-students.sort(function(a, b, c) {
+students.sort(function(a, b) {
   var nameA = a.name;
   var nameB = b.name;
+  var ageA = a.age;
+  var ageB = b.age;
   if (nameA < nameB) {
     return -1;
   }
-  if (nameA < nameB) {
+  if (nameA > nameB) {
     return 1;
   }
-  if (nameA === nameB) {
-    students.age.sort();
-  }
-
-  return 0;
-});
+return b.age - a.age;
+  });
 
 console.log(students)
 
