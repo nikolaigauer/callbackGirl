@@ -9,6 +9,7 @@ var students = [
 students.sort(function(a, b) {
   var nameA = a.name;
   var nameB = b.name;
+  // added these age variables to sort by age if the names are the same
   var ageA = a.age;
   var ageB = b.age;
   if (nameA < nameB) {
@@ -17,6 +18,8 @@ students.sort(function(a, b) {
   if (nameA > nameB) {
     return 1;
   }
+
+// sort by age IF the names are the same
 return b.age - a.age;
   });
 
